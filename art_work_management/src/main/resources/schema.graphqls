@@ -1,0 +1,34 @@
+type Query {
+    listAllEmployees: [Employee]
+    findEmployee(id: ID!): Employee
+}
+
+type Mutation {
+    deleteEmployee(id: ID!): Boolean
+    addArtwork(input: ArtworkInput): Artwork
+}
+
+type Employee {
+    id: ID!
+    email: String!
+    firstName: String!
+    lastName: String!
+    locked: Boolean!
+    role: String!
+}
+
+input ArtworkInput {
+    title: String!
+    yearOfCompletion: Int!
+    price: Float!
+    sold: Boolean!
+    artistId: ID!
+}
+
+type Artwork {
+    id: ID!
+    title: String!
+    yearOfCompletion: Int!
+    price: Float!
+    sold: Boolean!
+}
