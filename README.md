@@ -1,0 +1,3 @@
+This project is a RESTful web service designed to manage artists and their works of art, as well as employee data. It provides full CRUD functionality through both RESTful and GraphQL services, supporting operations such as listing artists and artworks, creating new records, updating existing records, and deleting records.
+
+The service uses Spring Boot, JPA, H2 embedded database, and Maven for implementation, with security features to manage user roles and access. It includes Aspect Oriented Programming (AOP) for logging and unit tests using MockMvc to ensure endpoint functionality. The service is designed with industry-standard practices in mind, although it simplifies some aspects for demonstration purposes.
